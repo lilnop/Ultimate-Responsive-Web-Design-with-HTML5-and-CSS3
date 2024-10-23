@@ -1,9 +1,0 @@
-.relative-box{
-    height: 200px;
-    width: 200px;
-    background-color: blue;
-    color: white;
-    position: relative;
-    top: 20px;
-    left: 20px;
-}

@@ -1,9 +1,0 @@
-.absolute-box{
-    height: 200px;
-    width: 200px;
-    background-color: blue;
-    color: white;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-}

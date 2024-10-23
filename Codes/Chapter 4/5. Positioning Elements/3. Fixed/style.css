@@ -1,9 +1,0 @@
-.fixed-box{
-    height: 200px;
-    width: 200px;
-    background-color: blue;
-    color: white;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-}
