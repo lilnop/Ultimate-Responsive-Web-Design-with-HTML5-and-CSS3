@@ -1,0 +1,276 @@
+/* GENERAL STYLING */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --primary-color: #4b208c;
+    --secondary-color: #00bbf0;
+    --bg-grey: #f1f1f2;
+}
+
+html {
+    /*THIS SETS FONT SIZE TO 10px */
+    font-size: 62.5%;
+}
+
+body {
+    /*THIS NOW SETS FONT SIZE TO 16px */
+    font-size: 1.6rem;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+section {
+    padding: 15px;
+    font-family: "open sans", sans-serif;
+}
+
+article {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.left {
+    text-align: left;
+}
+
+.bg-primary {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.secondary-color {
+    color: var(--secondary-color);
+}
+
+h2,
+h3,
+h5 {
+    font-size: 3.2rem;
+    text-align: center;
+    margin: 15px;
+}
+
+/* HEADER SECTION */
+header {
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+}
+
+#logo {
+    font-weight: 700;
+    font-size: 2.4rem;
+    margin: 15px 25px;
+    display: none;
+}
+
+nav ul li a {
+    display: block;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 8px;
+    font-size: 1.7rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    background-color: #fff;
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: .5s;
+}
+
+/* HERO SECTION */
+h1 {
+    font-size: 3.8rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-top: 40px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.img-space {
+    margin: 40px 0;
+}
+
+/* BUTTONS */
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: var(--secondary-color);
+    transition: all .3s;
+    border: 1px solid var(--secondary-color);
+    margin: 25px 0 50px 0;
+    font-size: 1.6rem;
+    width: 160px;
+    color: #fff;
+}
+
+.btn-send {
+    padding: 10px 15px;
+    background-color: var(--secondary-color);
+    color: #fff;
+    transition: all .3s;
+    margin: 25px 0 50px 0;
+    font-size: 1.5rem;
+    width: 160px;
+    font-weight: 700;
+    border: 1px solid #00bbf0;
+}
+
+.btn:hover,
+.btn-send:hover {
+    background-color: transparent;
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+/* SERVICES SECTION */
+
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin: 20px auto;
+    padding: 20px 5px;
+    background-color: var(--bg-grey);
+    line-height: 1.5;
+    max-width: 450px;
+}
+
+.card-icon {
+    border: 3px solid #000;
+    width: 67px;
+    border-radius: 20px;
+    font-size: 4rem;
+    margin: auto;
+}
+
+.card-title {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 15px;
+}
+
+.card-description {
+    margin: 5px;
+}
+
+.card .btn {
+    margin-bottom: 10px;
+}
+
+/* ABOUT SECTION */
+h4 {
+    font-size: 2.6rem;
+    margin-bottom: 10px;
+}
+
+/* CONTACT SECTION */
+.bg-grey {
+    background-color: var(--bg-grey);
+}
+
+input {
+    width: 90%;
+    border: 0;
+    height: 50px;
+    border-radius: 25px;
+    margin-bottom: 25px;
+    padding-left: 25px;
+    background-color: #fefdfc;
+    outline: 0;
+    color: #101010;
+    font-family: inherit;
+    font-size: 1.7rem;
+}
+
+.message {
+    height: 100px;
+}
+
+/* FOOTER */
+footer {
+    font-weight: 700;
+    padding: 20px;
+    font-family: "open sans", sans-serif;
+}
+
+/* Medium devices - tablets : maximum width of 768 pixels */
+@media (min-width: 576px) {
+    h1 {
+        font-size: 5rem;
+    }
+}
+
+/* Large devices - laptops : maximum width of 992 pixels */
+@media (min-width: 768px) {
+    #logo {
+        display: unset;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav ul li {
+        display: inline-block;
+    }
+
+    nav ul {
+        margin: 13px;
+    }
+
+    nav ul li a:hover {
+        background-color: transparent;
+        color: var(--secondary-color);
+    }
+
+    .double-column {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 10px;
+    }
+
+    .hero div,
+    #about div {
+        margin: auto;
+    }
+
+    .card {
+        margin: 20px auto;
+        max-width: 370px;
+    }
+
+    input {
+        max-width: 550px;
+    }
+}
+
+
+/* - Extra large devices: maximum width of 1200 pixels*/
+@media (min-width: 1200px) {
+    article {
+        max-width: 1140px;
+    }
+}

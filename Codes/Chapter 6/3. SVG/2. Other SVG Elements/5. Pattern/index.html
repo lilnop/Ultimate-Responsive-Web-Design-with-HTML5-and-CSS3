@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hello world</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <svg width="200" height="200">
+        <defs>
+            <pattern id="pattern1" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                <rect width="10" height="10" fill="green" />
+                <circle cx="10" cy="10" r="5" fill="red" />
+            </pattern>
+        </defs>
+        <rect width="200" height="200" fill="url(#pattern1)" />
+    </svg>
+    
+</body>
+</html>
